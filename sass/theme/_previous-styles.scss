@@ -141,16 +141,16 @@ $social-hover:			$aqua-light;
 	-webkit-box-shadow: 0 0px 10px rgba(0,0,0,.2);
 }
 
-.border-radius ($radius: $value) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius:    $radius;
-	border-radius:         $radius;
+.border-radius (@radius: @value) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
 }
 
-.opacity ($opactiy: $value) {
-	-webkit-opacity: 	$opactiy;
-	-moz-opacity: 		$opactiy;
-	opacity: 		$opactiy;
+.opacity (@opacity: @value) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 		@opacity;
 }
 
 .transition {
@@ -256,7 +256,7 @@ h5 {
 }
 
 .btn {
-	.border-radius ($radius: 0px);
+	.border-radius (@radius: 0px);
 	.transition;
 	&.btn-primary {
 		.primary;
@@ -581,10 +581,10 @@ padding: 12px 8px;
 			.widget {
 				.coral;
 				.thumbnail {
-					.border-radius ($radius: 0px);
+					.border-radius (@radius: 0px);
 
 					&:hover {
-								.opacity ($opactiy: 0.5);
+								.opacity (@opacity: 0.5);
 							}
 					border: none;
 					background: $white;
