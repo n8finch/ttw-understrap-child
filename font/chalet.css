@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Chalet';
+  src: url('ChaletParisNineteenSixty.eot'); /* IE9 Compat Modes */
+  src: url('ChaletParisNineteenSixty.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('ChaletParisNineteenSixty.woff') format('woff'), /* Modern Browsers */
+       url('ChaletParisNineteenSixty.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('ChaletParisNineteenSixty.svg#10b6b529907c5142cee9278071c700a9') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
