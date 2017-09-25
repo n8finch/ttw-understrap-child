@@ -1,11 +1,3 @@
-#Touch the World Child Theme
-
-Built off of the understrap theme, see below for setup deatils.
-
-
----
-
-
 # understrap-child
 Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap
 
