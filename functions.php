@@ -1,4 +1,9 @@
 <?php
+
+//* And in legacy functions
+include_once( __DIR__ . '/lean-functions.php');
+
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
