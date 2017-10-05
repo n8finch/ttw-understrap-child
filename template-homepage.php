@@ -46,7 +46,39 @@
 					<?php get_template_part( 'social-networking' ); ?>
 					</span>
 				</div>
-				
+				<div class="col-md-3 posts">
+					<!-- Show Latest 2 post exceprts -->
+
+					<?php // WP_Query arguments
+					$args = array (
+						'pagination'             => false,
+						'posts_per_page'         => '2',
+						'order'                  => 'DESC',
+					);
+
+					// The Query
+					$query = new WP_Query( $args );
+
+					// The Loop
+					if ( $query->have_posts() ) {
+						while ( $query->have_posts() ) {
+							$query->the_post(); ?>
+							<div class="home-post-lead">
+						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h3><?php the_title();?></h3></a>
+						<p><?php the_excerpt();?></p>
+						<span class="post-meta-details"><span class="author-name"><?php the_author_meta(display_name);?></span> - <span class="the-date"><?php echo get_the_date('m/d/y'); ?></span></span>
+					</div>
+						<?}
+					} else {
+						// no posts found
+					}
+
+					// Restore original Post Data
+					wp_reset_postdata(); ?>
+
+
+					<a href="/blog" class="home-post-read-more">More Posts >></a>
+				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 ad">
 					<div class="home-widgets clearfix">
                         <?php dynamic_sidebar( 'sidebar-6' ); ?>
