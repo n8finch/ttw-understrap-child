@@ -771,7 +771,7 @@ function find_new_social_icons() {
     // Be sure to look for any additional social icons
     $social_options = get_option( 'theme_social_options' );
 
-    if( $handle = opendir( get_template_directory() . '/images/social/small' ) ) {
+    if( $handle = opendir( get_stylesheet_directory() . '/images/social/small' ) ) {
 
         $available_icons = '';
         while( false != ( $filename = readdir( $handle ) ) ) {
