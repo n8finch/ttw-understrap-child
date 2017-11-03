@@ -60,22 +60,19 @@
 					$query = new WP_Query( $args );
 
 					// The Loop
-					if ( $query->have_posts() ) {
-						while ( $query->have_posts() ) {
-							$query->the_post(); ?>
-							<div class="home-post-lead">
+					if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+
+					<div class="home-post-lead">
 						<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><h3><?php the_title();?></h3></a>
 						<p><?php the_excerpt();?></p>
 						<span class="post-meta-details"><span class="author-name"><?php the_author_meta(display_name);?></span> - <span class="the-date"><?php echo get_the_date('m/d/y'); ?></span></span>
 					</div>
-						<?}
-					} else {
-						// no posts found
-					}
 
-					// Restore original Post Data
-					wp_reset_postdata(); ?>
-
+					<?php endwhile;
+					wp_reset_postdata();
+					else : ?>
+					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+					<?php endif; ?>
 
 					<a href="/blog" class="home-post-read-more">More Posts >></a>
 				</div>
