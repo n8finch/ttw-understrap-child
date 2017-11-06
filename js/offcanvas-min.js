@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){e('[data-toggle="offcanvas"]').click(function(){e(".row-offcanvas").toggleClass("active")})});
