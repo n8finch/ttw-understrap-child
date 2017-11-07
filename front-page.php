@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Homepage Template
+ * Template Name: Front Page Template
  *
  * The template for rendering the homepage.
  *

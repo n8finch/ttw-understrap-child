@@ -101,7 +101,7 @@ class Google_Custom_Search extends WP_Widget {
     	$gcse_content = esc_textarea( $instance['gcse_content'] );
 
 		// Display the admin form
-		include( get_template_directory() . '/lib/google-custom-search/views/admin.php' );
+		include( get_stylesheet_directory() . '/lib/google-custom-search/views/admin.php' );
 
 	} // end form
 

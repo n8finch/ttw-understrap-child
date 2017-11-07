@@ -54,7 +54,7 @@
  include_once( get_stylesheet_directory() . '/lean-includes/header.google-analytics.php' );
  include_once( get_stylesheet_directory() . '/lean-includes/header.google-plus.php' );
  include_once( get_stylesheet_directory() . '/lean-includes/footer.google-custom-search.php' );
-
+ 
  include_once( get_stylesheet_directory() . '/lib/Bootstrap_Nav_Walker.class.php' );
 
  /* ----------------------------------------------------------- *

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Homepage Template
+ * Template Name: DEPRICATED, Use Front Page Homepage Template
  *
  * The template for rendering the homepage.
  *
@@ -48,17 +48,17 @@
 				</div>
 				<div class="col-md-3 posts">
 					<!-- Show Latest 2 post exceprts -->
-					
+
 					<?php // WP_Query arguments
 					$args = array (
 						'pagination'             => false,
 						'posts_per_page'         => '2',
 						'order'                  => 'DESC',
 					);
-					
+
 					// The Query
 					$query = new WP_Query( $args );
-					
+
 					// The Loop
 					if ( $query->have_posts() ) {
 						while ( $query->have_posts() ) {
@@ -72,11 +72,11 @@
 					} else {
 						// no posts found
 					}
-					
+
 					// Restore original Post Data
 					wp_reset_postdata(); ?>
-					
-					
+
+
 					<a href="/blog" class="home-post-read-more">More Posts >></a>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 ad">

@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
-class WP_Bootstrap_Nav_Walker extends Walker_Nav_Menu {
+class Bootstrap_Nav_Walker extends Walker_Nav_Menu {
 	/**
 	 * The starting level of the menu.
 	 *

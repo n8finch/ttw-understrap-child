@@ -78,7 +78,7 @@
                         'theme_location'  	=> 'menu_above_logo',
                         'items_wrap'      	=> '<ul id="%1$s" class="nav navbar-right navbar-nav %2$s">%3$s</ul>',
                         'fallback_cb'	  	=> null,
-                        'walker'			=> new WP_Bootstrap_Nav_Walker()
+                        'walker'			=> new Bootstrap_Nav_Walker()
                     )
                 );
                 ?>
@@ -191,7 +191,7 @@ $head_class = ! empty( $header_image ) ? 'imageyup' : 'imageless';
                         'theme_location'  	=> 'menu_below_logo',
                         'items_wrap'      	=> '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
                         'fallback_cb'	  	=> null,
-                        'walker'			=> new WP_Bootstrap_Nav_Walker()
+                        'walker'			=> new Bootstrap_Nav_Walker()
                     )
                 );
                 ?>
