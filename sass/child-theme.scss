@@ -1,4 +1,13 @@
 @import "theme/child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+
+
+@import "theme/trips";
+@import "theme/events";
+@import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+// @import "theme/bootstrap-progressbar-3.3.0";
+@import "theme/faq";
+@import "theme/single-staff";
+
 @import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
 @import "../src/sass/understrap/understrap/understrap";// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 @import "../src/sass/understrap/theme/contact-form7";// <-------- Loads some basic styling for contact form 7 plugin

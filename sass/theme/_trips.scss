@@ -1,0 +1,534 @@
+// Colors
+$aqua:              			#00B3b0;
+$aqua-dark:				#01605e;
+$aqua-light:             	#a2dadc;
+$coral:             			#ef4e24;
+$coral-light:              #f26a36;
+$gold:             			#ffb12c;
+$gold-light:          	#ffc54f;
+$navy:            			#004356;
+$gray:						#ccc;
+$gray-dark:				#666;
+$gray-light:				#eee;
+$white:						#fff;
+$white-off:				#f8f8f8;
+$black:						#000000;
+
+// Color Usage
+
+$color-primary			: $aqua;
+$color-secondary	: $coral;
+$color-accent			: $gold;
+$color-shadow		: $gray;
+
+$social-color:			$navy;
+$social-bg:				$aqua;
+
+$social-hover:			$aqua-light;
+
+// UI Colors
+
+@mixin primary {
+	background-color: $color-primary;
+}
+
+@mixin secondary {
+	background-color: $color-secondary;
+}
+@mixin accent {
+	background-color: $color-accent;
+}
+
+@mixin aqua {
+	background-color: $aqua;
+}
+
+@mixin navy {
+	background-color: $navy;
+}
+@mixin coral {
+	background-color: $coral;
+}
+@mixin gold {
+	background-color:$gold;
+}
+
+// Fonts
+
+@font-face {font-family: 'Font Awesome';src: url('../fonts/fontawesome-webfont.ttf') format('truetype');}
+
+@mixin museo {
+	font-family: "museo-slab",serif;
+}
+@mixin proxima {
+	font-family: "proxima-nova",Helvetica,sans-serif;
+}
+@mixin chalet {
+	font-family: 'Chalet','Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+
+// Font Weights
+
+@mixin fw300 {
+	font-weight: 300;
+}
+@mixin fw400 {
+	font-weight: 400;
+}
+@mixin fw500 {
+	font-weight: 500;
+}
+@mixin fw600 {
+	font-weight: 600;
+}
+@mixin fw700 {
+	font-weight: 700;
+}
+@mixin fw900 {
+	font-weight: 900;
+}
+
+
+// Mixins
+
+@mixin drop-shadow {
+	box-shadow: 0 0px 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0px 10px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0px 10px rgba(0,0,0,.2);
+}
+
+@mixin border-radius ($radius: $value ) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	border-radius:         $radius;
+}
+
+@mixin opacity ($opacity: $value) {
+	-webkit-opacity: 	$opacity;
+	-moz-opacity: 		$opacity;
+	opacity: 		$opacity;
+}
+
+
+/* -------------------------------------------------------------------------------------------------
+ Customizations
+-------------------------------------------------------------------------------------------------*/
+
+.single-trips {
+	#wrapper {
+		padding-top: 0px;
+		.default-page {
+			.row {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+		}
+	}
+	#image-slider {
+		.carousel {
+			padding: 0px;
+			.carousel-indicators {
+				left: 85%;
+				top: 5%;
+			}
+		}
+	}
+	.trip-cats {
+		margin-bottom: 0px;
+		margin-top: 30px;
+
+		.badge {
+			margin: 3px;
+			width: 30px;
+			height: 30px;
+			@include border-radius ($radius: 50%);
+			padding-top: 9px;
+			@include proxima;
+
+			&.junior-high {
+				background: $coral;
+			}
+			&.senior-high {
+				background: $coral-light;
+			}
+			&.college {
+				background: $gold;
+			}
+			&.individual {
+				background: $aqua;
+			}
+			&.group {
+				background: $aqua-dark;
+			}
+			&.family {
+				background: $navy;
+			}
+			&:hover {
+				opacity: 0.5;
+			}
+			.text {
+				padding-top: 5px;
+			}
+
+		}
+	}
+	.charts {
+		h4 {
+			margin-bottom: 30px;
+		}
+		.chart-area {
+			height: 125px;
+			.progress {
+				width: 18%;
+				background-color: transparent;
+				@include border-radius ($radius: 0px);
+				box-shadow: none;
+				-webkit-box-shadow: none;
+				&.vertical {
+					margin-left: 5px;
+					margin-right: 5px;
+				}
+				.progress-bar {
+					box-shadow: none;
+					-webkit-box-shadow: none;
+					&.empty {
+						border: 2px dashed #ccc;
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+	.trip-options {
+		margin-top: 40px;
+		.table-responsive {
+			border: none;
+		}
+		table {
+			text-align: center;
+
+			thead {
+				tr {
+					th {
+						color: $white;
+						@include fw600;
+						text-align: center;
+					}
+				}
+			}
+			tbody {
+				tr {
+					a {
+
+					}
+					&.Full {
+						background: #f2dede;
+						color: $gray;
+						a {
+							color: $gray;
+						}
+						&:hover {
+							td {
+							background: #f2dede;
+							}
+						}
+					}
+
+				}
+			}
+		}
+
+			@media
+			only screen and (max-width: 760px),
+			(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+				/* Force table to not be like tables anymore */
+				table, thead, tbody, th, td, tr {
+					display: block;
+				}
+
+				/* Hide table headers (but not display: none;, for accessibility) */
+				thead tr {
+					position: absolute;
+					top: -9999px;
+					left: -9999px;
+				}
+
+				tr { border: 1px solid #ccc; }
+
+				td {
+					/* Behave  like a "row" */
+					border: none;
+					border-bottom: 1px solid #eee;
+					position: relative;
+					padding-left: 50%;
+					white-space: normal !important;
+				}
+
+				td:before {
+					/* Now like a table header */
+					position: absolute;
+					/* Top/left values mimic padding */
+					top: 6px;
+					left: 6px;
+					width: 45%;
+					padding-right: 10px;
+					white-space: normal;
+				}
+
+				/*
+				Label the data
+				*/
+				td:nth-of-type(1):before { content: "Leaving"; }
+				td:nth-of-type(2):before { content: "Returning"; }
+				td:nth-of-type(3):before { content: "Cost"; }
+				td:nth-of-type(4):before { content: "Qualifications"; }
+				td:nth-of-type(5):before { content: "Apply"; }
+			}
+	}
+	.trip-tiles {
+		.container {width: 100%;}
+		.row {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.panel-trip {
+			background: $white-off;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px solid $gray-light;
+			@include border-radius ($radius: 0px);
+			box-shadow: none;
+
+			&:hover {
+				border-color: $gold;
+			}
+			&.Full {
+					cursor: not-allowed;
+						.panel-heading {
+
+							background: $aqua-light;
+						}
+						color: $gray;
+						a {
+							&.btn {
+								background: $gray;
+								color: $gray-dark;
+							}
+						}
+						&:hover {
+							background: #f2dede;
+							border-color: $gray;
+							cursor: not-allowed;
+						}
+					}
+
+			.panel-heading {
+				@include aqua;
+				color: $white;
+			}
+			.panel-body {
+				span.title {
+					padding-bottom: 5px;
+				}
+			}
+		}
+	}
+	.trip-sidebar {
+		.breadcrumb {
+			background: none;
+		}
+		.the-scoop {
+			padding: 20px;
+			background: $aqua-dark;
+			margin-bottom: 20px;
+			h2 {
+				margin-top: 0px;
+				color: $coral;
+				font-size: 20px;
+				@include fw500;
+			}
+			ul {
+
+				li {
+					color: $white;
+					.fa {
+						color: $aqua;
+						padding-right: 10px;
+						font-size: 24px;
+						text-align: left;
+						width: 36px;
+						&.fa-* {
+
+						}
+					}
+					&:hover {
+						color: $gold;
+						.fa {
+							color: $gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-template-template-trip-list-php {
+
+	.sub-nav {
+		@include drop-shadow;
+
+		ul {
+			li {
+				float: left;
+				padding: 5px 10px;
+				list-style: none;
+				button {
+					text-transform: uppercase;
+					color: $white;
+					background: transparent;
+					&:hover {
+						color: $white;
+						background: darken($gold,10%);
+					}
+				}
+			}
+		}
+	}
+
+	#wrapper {
+		padding: 0px;
+	}
+
+	// Trip Menu with Post Tiles
+
+	.trip-tile {
+		background-repeat: no-repeat;
+		background-color: $aqua-dark;
+		.background {
+			height: 100%;
+			width: 100%;
+			opacity: 0.5;
+			position: absolute;
+			margin-left: -10px;
+			background-position: center center;
+		}
+
+		&:hover {
+			background-color: $coral;
+			.background {opacity: 0;}
+		}
+
+		span.tile-title {
+			text-align: center;
+			top: 50%;
+			display: block;
+			padding-top: 45%;
+			padding-bottom: 45%;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			color: $white;
+			text-transform: uppercase;
+			opacity: 1;
+			font-size: 18px;
+
+			@media only screen and (max-width: 991px) {
+				font-size: 0.8em;
+			}
+			@media only screen and (min-width: 1200px) {
+				font-size: 20px;
+			}
+		}
+	}
+
+
+	.row {margin-left: 0px;margin-right: 0px;}
+
+	.mission-trip-page {
+		padding: 30px 15px;
+
+		&:nth-of-type(even) {
+			background: $white-off;
+			border-top: 1px solid $gray-light;
+			border-bottom: 1px solid $gray-light;
+		}
+		&:hover {
+			background:lighten($gold-light,25%);
+		}
+
+		.details {
+			border-left: 3px solid $aqua;
+
+			h2 {
+				font-size: 24px;
+			}
+
+			p {
+
+				&.schedule {
+					font-weight: bold;
+					margin-bottom: 0px;
+					margin-top: 5px;
+					text-transform: uppercase;
+					color: $aqua-dark;
+				}
+			}
+
+			a {
+				&.apply {
+					margin-top: 10px;
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.sub-details {
+			a {
+				&.apply{
+					&.bottom {
+					margin-top: 20px;
+					}
+				}
+			}
+		}
+		.the-content {
+			margin-bottom: 15px;
+
+			a.trip-more {
+				color: $aqua;
+				font-weight: 600;
+
+			}
+			small {
+				color: $aqua-dark;
+			}
+		}
+	}
+}
+.advanced-trips-cta {
+	padding: 30px 0;
+	p {
+		font-size: 1.4em;
+		color: $aqua-dark;
+		padding: 10px 0;
+	}
+	a {
+		&.btn {
+			border: 2px solid $white;
+			text-transform: uppercase;
+			color: $white;
+			padding: 10px 0;
+			transition: 0.4s all;
+			&:hover {
+				background: $aqua-dark;
+				border-color: $aqua-dark;
+				transition: 0.4s all;
+			}
+		}
+	}
+}

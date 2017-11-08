@@ -1,0 +1,157 @@
+$aqua:              	#00B3b0;
+$aqua-dark:				#01605e;
+$aqua-light:            #a2dadc;
+$coral:             	#ef4e24;
+$coral-light:           #f26a36;
+$gold:             		#ffb12c;
+$gold-light:          	#ffc54f;
+$navy:            		#004356;
+$gray:					#ccc;
+$gray-dark:				#666;
+$gray-light:			#eee;
+$white:					#fff;
+$white-off:				#f8f8f8;
+$black:					#000000;
+
+// Color Usage
+
+$color-primary: 		$aqua;
+$color-secondary:		$coral;
+$color-accent: 			$gold;
+$color-shadow:			$gray;
+
+$social-color:			$navy;
+$social-bg:				$aqua;
+
+$social-hover:			$aqua-light;
+
+// UI Colors
+
+@mixin primary {
+	background-color: $color-primary;
+}
+
+@mixin secondary {
+	background-color: $color-secondary;
+}
+@mixin accent {
+	background-color: $color-accent;
+}
+
+@mixin aqua {
+	background-color: $aqua;
+}
+
+@mixin navy {
+	background-color: $navy;
+}
+@mixin coral {
+	background-color: $coral;
+}
+@mixin gold {
+	background-color:$gold;
+}
+
+// Mixins
+
+@mixin drop-shadow {
+	box-shadow: 0 0px 10px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0px 10px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0px 10px rgba(0,0,0,.2);
+}
+
+@mixin border-radius ($radius: $value ) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius:    $radius;
+	border-radius:         $radius;
+}
+
+@mixin opacity ($opacity: $value) {
+	-webkit-opacity: 	$opacity;
+	-moz-opacity: 		$opacity;
+	opacity: 		$opacity;
+}
+
+/*------------------------------------------- */
+
+
+
+	// FAQ Panels
+
+ .panel-group {
+	 &.faq {
+		 .panel {
+			 margin-bottom: 10px;
+			 @include border-radius (0px);
+			 border: 0px;
+			 box-shadow: none;
+			 &:nth-child(even) {
+				 	.panel-heading {
+					 	background: lighten($aqua-dark, 10%);
+
+					 	.panel-title {
+							 a {
+								 &:after, &:before {
+									 color: lighten($aqua-dark,20%);
+								 }
+							 }
+						 }
+					 }
+				 }
+
+			 .panel-heading {
+				 @include border-radius (0px);
+				 background: $aqua-dark;
+				 color: $white;
+
+				 .panel-title {
+					 a {
+						 font-size: 18px;
+						 &:after, &:before {
+							 color: lighten($aqua-dark,10%);
+							 &:hover {
+								 color: $aqua;
+							 }
+						 }
+					 }
+				 }
+			 }
+			 .panel-body {
+				 @include fw300;
+				 @include border-radius (0px);
+				 border: 0px;
+
+				 a {
+					 &:hover {
+						 background: $coral-light;
+						 color: $white;
+					 }
+				 }
+
+				 ul {
+					 padding-top: 10px;
+					 padding-bottom: 10px;
+
+					 li {
+						 padding-top: 2px;
+						 padding-bottom: 2px;
+					 }
+				 }
+			 }
+		}
+	 }
+
+
+ // Font Awesome Icons
+
+
+.panel-heading h4 a:after {
+    font-family: 'Font Awesome';
+    content: "\f068";
+    float: right;
+    color: $white;
+}
+.panel-heading h4 a.collapsed:after {
+    content: "\f067";
+}
+}
