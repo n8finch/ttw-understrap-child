@@ -1,0 +1,183 @@
+// Variables
+@social-icon-font-size:     14px;
+@lighten-or-darken:         lighten;
+@hover-percentage:          10%;
+
+// Colors - Social Brand
+@twitter-blue:              #1dadeb;
+@facebook-blue:             #637eb2;
+@linkedin-blue:             #479bc8;
+@vimeo-blue:                #1280a9;
+@dribbble-pink:             #d24079;
+@foursquare-green:          #aad25c;
+@googleplus-red:            #d34428;
+@pinterest-red:             #c41e26;
+@youtube-red:               #d64242;
+@rss-orange:                #fd9526;
+@soundcloud-orange:         #f8491d;
+@github-gray:               #555;
+
+// Colors - Theme
+@aqua:              			#00B3b0;
+@aqua-light:             	#a2dadc;
+@coral:             			#ef4e24;
+@coral-light:              #f26a36;
+@gold:             			#ffb12c;
+@gold-light:          	#ffc54f;
+@navy:            			#004356;
+@gray:						#ccc;
+@gray-dark:				#666;
+@gray-light:				#eee;
+@white:						#fff;
+@black:						#000000;
+
+@social-color:			@navy;
+@social-bg:				@aqua;
+
+@social-hover:			@aqua-light;
+
+// Hover
+@twitter-blue-hover:        lighten(@twitter-blue, @hover-percentage);
+@facebook-blue-hover:       lighten(@facebook-blue, @hover-percentage);
+@linkedin-blue-hover:       lighten(@linkedin-blue, @hover-percentage);
+@vimeo-blue-hover:          lighten(@vimeo-blue, @hover-percentage);
+@dribbble-pink-hover:       lighten(@dribbble-pink, @hover-percentage);
+@foursquare-green-hover:    lighten(@foursquare-green, @hover-percentage);
+@googleplus-red-hover:      lighten(@googleplus-red, @hover-percentage);
+@pinterest-red-hover:       lighten(@pinterest-red, @hover-percentage);
+@youtube-red-hover:         lighten(@youtube-red, @hover-percentage);
+@rss-orange-hover:          lighten(@rss-orange, @hover-percentage);
+@soundcloud-orange-hover:   lighten(@soundcloud-orange, @hover-percentage);
+@github-gray-hover:         lighten(@github-gray, @hover-percentage);
+
+// CSS
+.navbar {
+
+	.fa-* {
+		background-color: @social-bg;
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+  .fa-twitter {
+    font-size: @social-icon-font-size;
+    color: @social-color;
+    
+
+    &:hover {
+      color: @social-hover;
+    }
+  }
+
+  .fa-facebook {
+    font-size: @social-icon-font-size;
+    color: @social-color;
+
+    &:hover {
+      color: @social-hover;
+    }
+  }
+
+  .fa-linkedin {
+    font-size: @social-icon-font-size;
+    color: @linkedin-blue;
+
+    &:hover {
+      color: @linkedin-blue-hover;
+    }
+  }
+
+  .fa-google-plus {
+    font-size: @social-icon-font-size;
+    color: @googleplus-red;
+
+    &:hover {
+      color: @googleplus-red-hover;
+    }
+  }
+
+  .fa-youtube {
+    font-size: @social-icon-font-size;
+    color: @social-color;
+
+    &:hover {
+      color: @social-hover;
+    }
+  }
+  
+  .fa-instagram {
+    font-size: @social-icon-font-size;
+    color: @social-color;
+
+    &:hover {
+      color: @social-hover;
+    }
+  }
+
+  .fa-dribbble {
+    font-size: @social-icon-font-size;
+    color: @dribbble-pink;
+
+    &:hover {
+      color: @dribbble-pink-hover;
+    }
+  }
+
+  .fa-foursquare {
+    font-size: @social-icon-font-size;
+    color: @foursquare-green;
+
+    &:hover {
+      color: @foursquare-green-hover;
+    }
+  }
+
+  .fa-pinterest {
+    font-size: @social-icon-font-size;
+    color: @pinterest-red;
+
+    &:hover {
+      color: @pinterest-red-hover;
+    }
+  }
+
+  .fa-rss {
+    font-size: @social-icon-font-size;
+    color: @rss-orange;
+
+    &:hover {
+      color: @rss-orange-hover;
+    }
+  }
+
+  .fa-cloud {
+    font-size: @social-icon-font-size;
+    color: @soundcloud-orange;
+
+    &:hover {
+      color: @soundcloud-orange-hover;
+    }
+  }
+
+  .fa-vimeo-square {
+    font-size: @social-icon-font-size;
+    color: @social-color;
+
+    &:hover {
+      color: @social-hover;
+    }
+  }
+
+  .fa-github {
+    font-size: @social-icon-font-size;
+    color: @github-gray;
+
+    &:hover {
+      color: @github-gray-hover;
+    }
+  }
+
+  .fa-envelope {
+    font-size: @social-icon-font-size;
+  }
+}
