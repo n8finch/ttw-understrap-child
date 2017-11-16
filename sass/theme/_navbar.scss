@@ -1,0 +1,77 @@
+// Header
+
+header {
+	@include drop-shadow;
+
+	&.jumbotron {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	#head-wrapper {
+		padding: 0px;
+	}
+
+}
+
+.navbar .navbar-nav.nav-pills>li>a {
+padding: 12px 8px;
+}
+
+// Navigation
+
+nav.menu-above-header {
+	@include navy;
+	border: none;
+	padding: 0;
+
+	.container {
+		padding-left: 0px;
+
+		.menu-above {
+			width: 100%;
+		}
+	}
+
+	ul.menu {
+		li {
+			a {
+				text-transform: uppercase;
+				font-size: 13px;
+				@include fw600;
+				color: $white;
+				padding: 16px;
+
+				&:hover {
+					background-color: $aqua-light;
+					color: #333;
+
+				}
+			}
+		}
+	}
+
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+	ul#menu-upper {
+		justify-content: flex-end;
+	}
+}
+
+.light .jumbotron {
+    background-color: #fff;
+}
+
+
+.menu-below-header {
+	margin-top: 15px;
+
+	.navbar-nav>li>a {
+		color: $aqua-dark;
+		text-transform: uppercase;
+		font-size: 13px;
+		@include fw600;
+	}
+}

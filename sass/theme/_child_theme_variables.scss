@@ -42,6 +42,33 @@ $social-hover:			$aqua-light;
 
 // UI Colors
 
+.primary {
+	background-color: $color-primary;
+}
+
+.secondary {
+	background-color: $color-secondary;
+}
+.accent {
+	background-color: $color-accent;
+}
+
+.aqua {
+	background-color: $aqua;
+}
+
+.navy {
+	background-color: $navy;
+}
+.coral {
+	background-color: $coral;
+}
+.gold {
+	background-color:$gold;
+}
+
+// UI Colors Mixins
+
 @mixin primary {
 	background-color: $color-primary;
 }
@@ -183,4 +210,93 @@ $social-hover:			$aqua-light;
         width: 20%;
         float: left;
     }
+}
+
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+    display: none !important;
+}
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+	    width: 970px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+	    width: 750px;
+	}
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+@media (max-width: 767px) {
+	.visible-xs {
+    	display: block !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.hidden-xs {
+	    display: none !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+	    float: left;
+	    margin: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-left {
+	    float: left !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-right {
+	    float: right !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav.navbar-right:last-child {
+	    margin-right: -15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-nav>li {
+	    float: left;
+	}
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.navbar .nav.navbar-nav.menu>li:first-child {
+    margin-left: -30px;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
 }

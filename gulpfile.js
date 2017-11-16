@@ -15,8 +15,8 @@ var browserSyncWatchFiles = [
 // browser-sync options
 // see: https://www.browsersync.io/docs/options/
 var browserSyncOptions = {
-    proxy: "localhost/understrap/",
-    notify: false
+    proxy: "ttw.dev",
+    notify: true
 };
 
 // Defining requirements

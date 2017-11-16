@@ -97,61 +97,7 @@ h5 {
 
 .row.nomargin {margin: 0px;}
 
-// Header
 
-header {
-	@include drop-shadow;
-
-	&.jumbotron {
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-
-	#head-wrapper {
-		padding: 0px;
-	}
-
-}
-
-.navbar .navbar-nav.nav-pills>li>a {
-padding: 12px 8px;
-}
-
-// Navigation
-
-.menu-above-header {
-	@include navy;
-	border: none;
-	.container {
-		padding-left: 0px;
-	}
-	ul.menu {
-		li {
-			a {
-				text-transform: uppercase;
-				font-size: 13px;
-				@include fw600;
-				color: $white;
-
-				&:hover {
-					background-color: $aqua-light;
-
-				}
-			}
-		}
-	}
-}
-
-.menu-below-header {
-	margin-top: 15px;
-
-	.navbar-nav>li>a {
-		color: $aqua-dark;
-		text-transform: uppercase;
-		font-size: 13px;
-		@include fw600;
-	}
-}
 
 // Slider
 
