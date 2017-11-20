@@ -1115,7 +1115,7 @@ function featured_slider() {
     $indicators = '<ol class="carousel-indicators">';
 
     $slides = '<div class="carousel-inner">';
-    $html = '<div id="image-slider" class="carousel slide">';
+    $html = '<div id="image-slider" class="carousel slide" data-ride="carousel">';
 
     while ( $query->have_posts() ) :
         $query->the_post();
@@ -1130,7 +1130,7 @@ function featured_slider() {
 
         $indicators .= '"></li>';
 
-        $slides .= '<div class="item';
+        $slides .= '<div class="carousel-item item';
         if ($index == 0) {
             $slides .= ' active';
         }
