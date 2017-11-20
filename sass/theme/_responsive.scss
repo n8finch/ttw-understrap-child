@@ -190,8 +190,9 @@ Media Queries
 		padding: 0px;
 		.menu-below-header {margin-top: 5px;}
 		#logo a img {
-			width: 60%;
+			width: 70%;
 			float: left;
+			margin-bottom: 5px;
 			margin-top: 5px;
 		}
 		.navbar-toggle {
@@ -200,7 +201,7 @@ Media Queries
 
 	}
 	.menu-header-container {
-		margin-right: -20px;
+		// margin-right: -20px;
 	}
 	#menu-upper {
 		margin: 0px;
@@ -317,8 +318,9 @@ Media Queries
 	padding: 0px;
 	.menu-below-header {margin-top: 5px;}
 	#logo a img {
-		width: 60%;
+		width: 70%;
 		float: left;
+		margin-bottom: 5px;
 		margin-top: 5px;
 	}
 	.navbar-toggle {

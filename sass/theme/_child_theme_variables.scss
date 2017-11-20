@@ -213,6 +213,26 @@ $social-hover:			$aqua-light;
 }
 
 
+@media (min-width: 1200px) {
+	.container {
+	    width: 1170px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+	    width: 970px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+	    width: 750px;
+	}
+}
+
+
+
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
     display: none !important;
 }
@@ -243,9 +263,33 @@ $social-hover:			$aqua-light;
 }
 
 
+@media (min-width: 1200px) {
+	.visible-lg {
+	    display: block !important;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.visible-md {
+	    display: block !important;
+	}
+}
+
 @media (max-width: 767px) {
 	.visible-xs {
     	display: block !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hidden-lg {
+	    display: none !important;
+	}
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	.hidden-md {
+	    display: none !important;
 	}
 }
 

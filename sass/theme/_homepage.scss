@@ -83,6 +83,10 @@
 	padding: 40px 20px;
 	@include drop-shadow;
 
+	a:hover {
+		text-decoration: none;
+	}
+
 	a.close {
 		color: darken($coral,10%);
 		text-transform: uppercase;
@@ -133,6 +137,10 @@
 .bcd-aqua-intro-bar {
 	@include aqua;
 
+	@media (max-width: 480px) {
+		padding-bottom: 50px;
+	}
+
 	.row {
 		justify-content: space-around;
 	}
@@ -154,6 +162,12 @@
 	}
 
 	.role-select {
+
+		@media (max-width: 480px) {
+			min-width: 200px;
+			width: 100%;
+		}
+
 		padding: 30px 0px;
 		max-width: 100%;
 		text-align: center;
@@ -165,6 +179,13 @@
 			margin: 10px auto;
 			text-align: center;
 			text-transform: uppercase;
+		}
+
+		img {
+			@media (max-width: 480px) {
+				max-height: 160px;
+				max-width: 160px;
+			}
 		}
 	}
 }
@@ -244,7 +265,7 @@
 
 					border: none;
 					background: $white;
-					
+
 				}
 				.caption {
 						display: none;

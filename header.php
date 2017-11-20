@@ -170,12 +170,14 @@ $head_class = ! empty( $header_image ) ? 'imageyup' : 'imageless';
                 </div><!-- /#logo -->
 
                <?php if( has_nav_menu( 'menu_below_logo' ) ) { ?>
+			   <!-- Place Mobile Menu Button -->
+			   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu-below">
+                   <span>Menu</span>
+               </button>
     <nav class="menu-below-header menu-navigation navbar-static-top navbar navbar-right<?php echo $dark ? ' navbar-inverse' : ''; ?>" role="navigation">
 
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu-below">
-                    <span>Menu</span>
-                </button>
+                <!-- Menu Button was here -->
                 <?php if( ! has_nav_menu( 'menu_above_logo' ) ) { ?>
                     <div class="visible-xs">
                         <?php get_template_part( 'social-networking' ); ?>
