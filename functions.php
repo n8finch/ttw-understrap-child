@@ -1643,3 +1643,25 @@ function ttw_newsletters_taxonomy() {
 
 // Hook into the 'init' action
 add_action( 'init', 'ttw_newsletters_taxonomy', 0 );
+
+
+
+/**
+ * Override Read More excerpt links from the UnderStrap Parent Theme (see understrap/functions.php)
+ * @var [type]
+ */
+
+add_filter( 'excerpt_more', 'custom_excerpt_more' );
+add_filter( 'wp_trim_excerpt', 'all_excerpts_get_more_link' );
+
+if ( ! function_exists( 'custom_excerpt_more' ) ) {
+	function custom_excerpt_more( $more ) {
+		return '';
+	}
+}
+
+if ( ! function_exists( 'all_excerpts_get_more_link' ) ) {
+	function all_excerpts_get_more_link( $post_excerpt ) {
+		return $post_excerpt;
+	}
+}

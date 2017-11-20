@@ -262,41 +262,74 @@ $social-hover:			$aqua-light;
 	}
 }
 
-@media (min-width: 768px) {
-	.navbar-left {
-	    float: left !important;
+// Global
+
+body {
+	 @include proxima;
+	 @include fw400;
+	 color: $navy;
+}
+
+h1, h2, h3, h4, h5 {
+	color: $aqua-dark;
+}
+
+h1, h2, h3, h4 {
+	@include museo;
+}
+
+h1 {
+	font-size: 50px;
+	@include fw300;
+}
+h2 {
+	font-size: 44px;
+	@include fw300;
+}
+h3 {
+	font-size: 36px;
+}
+h4 {
+	font-size: 28px;
+}
+h5 {
+	@include proxima;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.btn {
+	@include border-radius ($radius: 0px);
+	@include transition;
+	&.btn-primary {
+		@include primary;
+		color: $white !important;
+		border: none;
+		@include transition;
+		&:hover {
+			@include coral;
+			@include transition;
+		}
 	}
-}
-
-@media (min-width: 768px) {
-	.navbar-right {
-	    float: right !important;
+	&.btn-secondary {
+		@include secondary;
+		color: $white !important;
+		border: none;
+		&:hover {
+			@include navy;
+			@include transition;
+		}
 	}
-}
-
-@media (min-width: 768px) {
-	.navbar-nav.navbar-right:last-child {
-	    margin-right: -15px;
+	&.btn-accent {
+		@include accent;
+		color: $white !important;
+		border: none;
+		&:hover {
+			@include navy;
+			@include transition;
+		}
 	}
+
 }
 
-@media (min-width: 768px) {
-	.navbar-nav>li {
-	    float: left;
-	}
-}
-
-.nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}
-
-.navbar .nav.navbar-nav.menu>li:first-child {
-    margin-left: -30px;
-}
-
-.nav>li {
-    position: relative;
-    display: block;
-}
+.row.nomargin {margin: 0px;}

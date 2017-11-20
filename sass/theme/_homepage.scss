@@ -1,15 +1,3 @@
-.page-template-front-page {
-	#image-slider .carousel-inner .carousel-item .carousel-caption p{
-		display: none;
-	}
-
-	#image-slider .carousel-inner .carousel-item .carousel-caption p:first-of-type {
-		display: block;
-	}
-}
-
-
-
 // Slider
 
 .carousel {
@@ -138,4 +126,142 @@
 		}
 	}
 
+}
+
+
+
+.bcd-aqua-intro-bar {
+	@include aqua;
+
+	.row {
+		justify-content: space-around;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	h3 {
+		color: $white;
+		@include museo;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	p {
+		color: $navy;
+		@include fw300;
+		font-size: 13px;
+	}
+
+	.role-select {
+		padding: 30px 0px;
+		max-width: 100%;
+		text-align: center;
+		width: 100%;
+
+		h5 {
+			color: $white;
+			font-size: 16px;
+			margin: 10px auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.home-whats-new {
+	padding: 30px 0;
+
+	.title {
+		h2 {
+			text-transform: uppercase;
+			color: $aqua-dark;
+			@include fw600;
+			font-size: 32px;
+			@include proxima;
+		}
+	}
+
+	.social-networking-icons {
+		flex-direction: row;
+	}
+	.posts {
+		border-left: 4px solid $aqua;
+
+		.home-post-lead {
+			margin-bottom: 15px;
+			h3 {
+				margin-top: 0px;
+				margin-bottom: 5px;
+					color: $aqua-dark;
+					@include museo;
+					font-size: 16px;
+					@include fw700;
+					&:hover {
+						color: $coral;
+					}
+			}
+			p {
+				font-size: 14px;
+				color: $navy;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+			}
+			.post-meta-details {
+				color: $navy;
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				.author-name {
+
+				}
+				.the-date {
+
+				}
+			}
+		}
+		a.home-post-read-more {
+			font-size: 12px;
+			color: $aqua;
+			font-weight: bold;
+			text-transform: uppercase;
+			&:hover {
+				color: $coral;
+			}
+		}
+	}
+	.ad {
+		.home-widgets {
+			.widget {
+				@include coral;
+
+				img {
+					@include border-radius ($radius: 0px);
+
+					&:hover {
+						@include opacity ($opacity: 0.5);
+					}
+
+					border: none;
+					background: $white;
+					
+				}
+				.caption {
+						display: none;
+				}
+			}
+		}
+	}
+}
+
+.home-ig-bar {
+	@include aqua;
+	height: auto;
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+		.ri-grid {
+			margin-bottom: 0px;
+		}
+	}
 }

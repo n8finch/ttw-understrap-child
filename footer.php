@@ -29,28 +29,7 @@
                             <?php dynamic_sidebar( 'sidebar-5' ); ?>
                         </div><!-- /.footer-widget  -->
 
-						<div class="footer-widget col-md-3 col-md-offset-1 col-sm-12 col-xs-12 visible-md visible-lg">
-							<a href="<?php echo home_url();?>/donate" class="btn btn-primary pull-right">Donate</a>
-			                <p class="navbar-text navbar-right">
-			                    <?php if( 'always' == $presentation_options['display_footer_credits'] ) { ?>
-			                        <?php
-			                            $bcd_url = 'http://brooklyncreativedesign.com';
-			                            $theme_url = THEME_URL;
-			                        ?>
-			                        <?php if( null != get_page_by_path( 'privacy-policy' ) && 0 != get_page_by_path( 'privacy-policy' )->ID && 'publish' == get_page_by_path( 'privacy-policy' )->post_status ) { ?>
-			                            <?php printf( __( '&copy; %1$s %2$s<br />%3$s | %4$s', TRANSLATION_KEY ), date( 'Y' ), '<a class="navbar-link" href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a>', '<a class="navbar-link" href="' . get_permalink( get_page_by_path( 'privacy-policy' )->ID ) . '">Privacy Policy</a>', '<a class="navbar-link" href="' . $bcd_url . '" target="_blank">Site Credits</a>' ); ?>
-			                        <?php } else { ?>
-			                            <?php printf( __( '&copy; %1$s %2$s<br />%3$s', TRANSLATION_KEY ), date( 'Y' ), '<a class="navbar-link" href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a>', '<a class="navbar-link" href="' . $bcd_url . '" target="_blank">Site Credits</a>' ); ?>
-			                        <?php } // end if/else ?>
-			                    <?php } else { ?>
-			                        <?php printf( __( '&copy; %1$s %2$s', TRANSLATION_KEY ), date( 'Y' ), '<a class="navbar-link" href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a>'); ?>
-			                    <?php } // end if ?>
-			                    </p>
-			                <div class="affiliations">
-			                	<?php dynamic_sidebar( 'sidebar-12' ); ?>
-			                </div>
-
-						</div><!-- /.footer-widget  -->
+						
                     </div><!-- /row -->
 					<div class="row clearfix bottom-footer hidden-md hidden-lg">
 						<div class="footer-widget col-sm-6">
