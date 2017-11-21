@@ -88,17 +88,17 @@ Variables
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container {
-    width: 1170px; } }
+    width: 750px; } }
 
 @media (min-width: 992px) {
   .container {
     width: 970px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .container {
-    width: 750px; } }
+    width: 1170px; } }
 
 .container {
   margin-right: auto;
@@ -140,11 +140,19 @@ body {
   font-weight: 400;
   color: #004356; }
 
+#wrapper {
+  padding: 40px 0; }
+
+.post-header {
+  margin-bottom: 15px;
+  padding: 20px 0; }
+
 h1, h2, h3, h4, h5 {
   color: #01605e; }
 
 h1, h2, h3, h4 {
-  font-family: "museo-slab",serif; }
+  font-family: "museo-slab",serif;
+  font-family: 'museo-slab', serif; }
 
 h1 {
   font-size: 50px;
@@ -9781,6 +9789,21 @@ Media Queries
     margin-left: 0px;
     margin-right: 0px; } }
 
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+#wrapper {
+  padding: 40px 0; }
+
 @media (max-width: 1200px) {
   header.jumbotron #header-wrapper.container {
     width: 1170px; } }
@@ -10202,66 +10225,6 @@ button.navbar-toggle {
     .home-ig-bar .row .ri-grid {
       margin-bottom: 0px; }
 
-.orange-bottom-bar {
-  height: 50px;
-  background-color: #00B3b0; }
-  .orange-bottom-bar a:hover {
-    text-decoration: none; }
-  .orange-bottom-bar .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-top: 30px solid #ef4e24;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
-
-footer .navbar-default {
-  padding: 40px 0;
-  border: none;
-  background-color: #001e26;
-  color: #00B3b0; }
-  footer .navbar-default .container {
-    align-items: flex-start; }
-    footer .navbar-default .container .row:first-child {
-      width: 100%;
-      justify-content: space-between; }
-  footer .navbar-default .navbar-text, footer .navbar-default .navbar-nav, footer .navbar-default .footer-widget {
-    color: #01605e;
-    text-transform: uppercase;
-    font-size: 13px; }
-    footer .navbar-default .navbar-text p, footer .navbar-default .navbar-nav p, footer .navbar-default .footer-widget p {
-      color: #01605e; }
-    footer .navbar-default .navbar-text a, footer .navbar-default .navbar-nav a, footer .navbar-default .footer-widget a {
-      color: #00B3b0; }
-  footer .navbar-default .footer-widget .widget h4 {
-    font-size: 13px;
-    font-weight: bold;
-    font-family: "proxima-nova",Helvetica,sans-serif; }
-  footer .navbar-default .footer-widget .widget .menu li {
-    padding: 1px 0; }
-  footer .navbar-default .navbar-right {
-    text-align: right; }
-  footer .navbar-default .footer-social {
-    float: left; }
-    footer .navbar-default .footer-social ul.social-networking-icons {
-      flex-direction: row; }
-
-footer a:hover {
-  color: #ffb12c !important; }
-
-footer .bottom-footer {
-  margin-top: 30px; }
-
-footer .affiliations .widget {
-  height: 70px;
-  float: right;
-  padding: 5px; }
-  footer .affiliations .widget img {
-    height: 100%;
-    width: auto; }
-
 .primary {
   background-color: #00B3b0; }
 
@@ -10641,6 +10604,24 @@ footer .affiliations .widget {
       border-color: #01605e;
       transition: 0.4s all; }
 
+.page-template-template-venture-project-php #wrapper .container .row {
+  justify-content: center; }
+
+.page-template-template-venture-project-php #wrapper .post-header h1 {
+  color: #01605e;
+  border-bottom: none;
+  font-family: 'museo-slab', serif;
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0 0 5px;
+  padding-bottom: 9px; }
+
+.page-template-template-venture-project-php #wrapper .wp-video {
+  margin: auto; }
+
+.page-template-template-venture-project-php #wrapper .venture-testimonies + .row.clearfix img {
+  border-radius: 100%; }
+
 @font-face {
   font-family: 'Font Awesome';
   src: url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
@@ -10829,3 +10810,63 @@ footer .affiliations .widget {
 
 .single-staff .orange-intro-bar {
   display: none; }
+
+.orange-bottom-bar {
+  height: 50px;
+  background-color: #00B3b0; }
+  .orange-bottom-bar a:hover {
+    text-decoration: none; }
+  .orange-bottom-bar .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 30px solid #ef4e24;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+
+footer .navbar-default {
+  padding: 40px 0;
+  border: none;
+  background-color: #001e26;
+  color: #00B3b0; }
+  footer .navbar-default .container {
+    align-items: flex-start; }
+    footer .navbar-default .container .row:first-child {
+      width: 100%;
+      justify-content: space-between; }
+  footer .navbar-default .navbar-text, footer .navbar-default .navbar-nav, footer .navbar-default .footer-widget {
+    color: #01605e;
+    text-transform: uppercase;
+    font-size: 13px; }
+    footer .navbar-default .navbar-text p, footer .navbar-default .navbar-nav p, footer .navbar-default .footer-widget p {
+      color: #01605e; }
+    footer .navbar-default .navbar-text a, footer .navbar-default .navbar-nav a, footer .navbar-default .footer-widget a {
+      color: #00B3b0; }
+  footer .navbar-default .footer-widget .widget h4 {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "proxima-nova",Helvetica,sans-serif; }
+  footer .navbar-default .footer-widget .widget .menu li {
+    padding: 1px 0; }
+  footer .navbar-default .navbar-right {
+    text-align: right; }
+  footer .navbar-default .footer-social {
+    float: left; }
+    footer .navbar-default .footer-social ul.social-networking-icons {
+      flex-direction: row; }
+
+footer a:hover {
+  color: #ffb12c !important; }
+
+footer .bottom-footer {
+  margin-top: 30px; }
+
+footer .affiliations .widget {
+  height: 70px;
+  float: right;
+  padding: 5px; }
+  footer .affiliations .widget img {
+    height: 100%;
+    width: auto; }

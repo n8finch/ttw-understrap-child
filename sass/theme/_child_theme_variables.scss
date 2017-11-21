@@ -238,9 +238,10 @@ $social-hover:			$aqua-light;
     display: none !important;
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 768px) {
 	.container {
-	    width: 1170px;
+	    width: 750px;
 	}
 }
 
@@ -250,9 +251,9 @@ $social-hover:			$aqua-light;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 	.container {
-	    width: 750px;
+	    width: 1170px;
 	}
 }
 
@@ -315,12 +316,22 @@ body {
 	 color: $navy;
 }
 
+#wrapper {
+	padding: 40px 0;
+}
+
+.post-header {
+	margin-bottom: 15px;
+	padding: 20px 0;
+}
+
 h1, h2, h3, h4, h5 {
 	color: $aqua-dark;
 }
 
 h1, h2, h3, h4 {
 	@include museo;
+	font-family: 'museo-slab', serif;
 }
 
 h1 {

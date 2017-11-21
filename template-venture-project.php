@@ -101,43 +101,7 @@
 
 										<?php endif; ?>
 
-										<!-- Values Section -->
-
-										<?php if( have_rows('venture_values') ): ?>
-
-											<div class="row margin-top-20 clearfix">
-
-											<?php while( have_rows('venture_values') ): the_row();
-
-												// vars
-												$name = get_sub_field('title');
-												$icon = get_sub_field('icon');
-												$link = get_sub_field('link');
-
-												?>
-
-													<?php if($link)
-														{
-															echo '<a href="'. $link .'">';
-
-														} ?>
-													<div class="col-md-2 venture-values text-center">
-
-															<div class="row clearfix">
-																<span class="fa <?php echo $icon;?>"></span>
-															</div>
-															<div class="row title clearfix">
-																<?php echo $name; ?>
-															</div>
-
-													</div>
-													<?php if($link) {echo '</a>';} ?>
-
-											<?php endwhile; ?>
-
-											</div>
-
-										<?php endif; ?>
+										
 
                                     </div><!-- /.entry-content -->
                                 </div><!-- /.entry-content -->
@@ -150,4 +114,3 @@
         </div><!--/container -->
     </div> <!-- /#wrapper -->
 <?php get_footer(); ?>
-

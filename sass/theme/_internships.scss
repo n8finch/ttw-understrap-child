@@ -1,0 +1,28 @@
+.page-template-template-venture-project-php #wrapper {
+
+	.container .row {
+		justify-content: center;
+	}
+
+	.post-header h1 {
+		color: $aqua-dark;
+	    border-bottom: none;
+		font-family: 'museo-slab', serif;
+		font-size: 50px;
+	    font-weight: 300;
+	    margin: 0 0 5px;
+		padding-bottom: 9px;
+	}
+
+	.wp-video {
+		margin: auto;
+	}
+
+	.venture-testimonies + .row.clearfix {
+
+		img {
+			border-radius: 100%;
+		}
+	}
+
+}
