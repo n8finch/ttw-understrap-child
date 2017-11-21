@@ -9868,7 +9868,7 @@ nav.menu-above-header {
   nav.menu-above-header .container {
     padding-left: 0px;
     padding-right: 0px; }
-    @media (max-width: 979px) and (min-width: 768px) {
+    @media (max-width: 979px) and (min-width: 576px) {
       nav.menu-above-header .container {
         max-width: 100%; } }
     nav.menu-above-header .container .navbar-header .visible-xs .navbar-left {

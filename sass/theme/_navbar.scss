@@ -106,9 +106,10 @@ nav.menu-above-header {
 	padding: 0;
 
 	.container {
-		@media (max-width: 979px) and (min-width: 768px) {
+		@media (max-width: 979px) and (min-width: 576px) {
 			max-width: 100%;
 		}
+
 		padding-left: 0px;
 		padding-right: 0px;
 
