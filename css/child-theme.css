@@ -10490,98 +10490,112 @@ footer .affiliations .widget {
       .single-trips .trip-sidebar .the-scoop ul li:hover .fa {
         color: #ffb12c; }
 
-.page-template-template-trip-list-php .sub-nav {
-  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-  min-height: 40px; }
-  .page-template-template-trip-list-php .sub-nav ul li {
-    float: left;
-    padding: 5px 10px;
-    list-style: none; }
-    .page-template-template-trip-list-php .sub-nav ul li button {
-      text-transform: uppercase;
-      color: #fff;
-      background: transparent;
-      border-radius: 0;
-      transition: .4s all; }
-      .page-template-template-trip-list-php .sub-nav ul li button:hover {
-        color: #fff;
-        background: #f89c00; }
-
-.page-template-template-trip-list-php #wrapper {
-  padding: 0px; }
-  .page-template-template-trip-list-php #wrapper .row.aqua {
-    width: 100%; }
-
-.page-template-template-trip-list-php .trip-tile {
-  background-repeat: no-repeat;
-  background-color: #01605e; }
-  .page-template-template-trip-list-php .trip-tile .background {
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-    position: absolute;
-    margin-left: -10px;
-    background-position: center center; }
-  .page-template-template-trip-list-php .trip-tile:hover {
-    background-color: #ef4e24; }
-    .page-template-template-trip-list-php .trip-tile:hover .background {
-      opacity: 0; }
-  .page-template-template-trip-list-php .trip-tile span.tile-title {
-    text-align: center;
-    top: 50%;
-    display: block;
-    padding-top: 45%;
-    padding-bottom: 45%;
+.page-template-template-trip-list-php {
+  position: relative; }
+  .page-template-template-trip-list-php .sub-nav.gold {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    min-height: 40px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    text-transform: uppercase;
-    opacity: 1;
-    font-size: 18px; }
-    @media only screen and (max-width: 991px) {
-      .page-template-template-trip-list-php .trip-tile span.tile-title {
-        font-size: 0.8em; } }
-    @media only screen and (min-width: 1200px) {
-      .page-template-template-trip-list-php .trip-tile span.tile-title {
-        font-size: 20px; } }
-
-.page-template-template-trip-list-php .row {
-  margin-left: 0px;
-  margin-right: 0px; }
-
-.page-template-template-trip-list-php .mission-trip-page {
-  padding: 30px 15px; }
-  .page-template-template-trip-list-php .mission-trip-page:nth-of-type(even) {
-    background: #f8f8f8;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
-  .page-template-template-trip-list-php .mission-trip-page:hover {
-    background: #ffefcf; }
-  .page-template-template-trip-list-php .mission-trip-page .details {
-    border-left: 3px solid #00B3b0; }
-    .page-template-template-trip-list-php .mission-trip-page .details h2 {
-      font-size: 24px; }
-    .page-template-template-trip-list-php .mission-trip-page .details p.schedule {
-      font-weight: bold;
-      margin-bottom: 0px;
-      margin-top: 5px;
+    width: 100%; }
+    @media screen and (min-width: 480px) {
+      .page-template-template-trip-list-php .sub-nav.gold {
+        margin-bottom: -41px;
+        margin-top: -15px; } }
+    @media screen and (max-width: 480px) {
+      .page-template-template-trip-list-php .sub-nav.gold {
+        margin-bottom: -40px;
+        height: 125px; } }
+    .page-template-template-trip-list-php .sub-nav.gold ul li {
+      float: left;
+      padding: 5px 10px;
+      list-style: none; }
+      .page-template-template-trip-list-php .sub-nav.gold ul li button {
+        text-transform: uppercase;
+        color: #fff;
+        background: transparent;
+        border-radius: 0;
+        transition: .4s all; }
+        .page-template-template-trip-list-php .sub-nav.gold ul li button:hover {
+          color: #fff;
+          background: #f89c00; }
+  .page-template-template-trip-list-php #wrapper {
+    padding: 0px; }
+    .page-template-template-trip-list-php #wrapper .row.aqua {
+      margin-top: 40px;
+      width: 100%; }
+      @media (max-width: 767px) and (min-width: 480px) {
+        .page-template-template-trip-list-php #wrapper .row.aqua {
+          margin-top: 0;
+          position: relative;
+          top: -40px; } }
+  .page-template-template-trip-list-php .trip-tile {
+    background-repeat: no-repeat;
+    background-color: #01605e; }
+    .page-template-template-trip-list-php .trip-tile .background {
+      height: 100%;
+      width: 100%;
+      opacity: 0.5;
+      position: absolute;
+      margin-left: -10px;
+      background-position: center center; }
+    .page-template-template-trip-list-php .trip-tile:hover {
+      background-color: #ef4e24; }
+      .page-template-template-trip-list-php .trip-tile:hover .background {
+        opacity: 0; }
+    .page-template-template-trip-list-php .trip-tile span.tile-title {
+      text-align: center;
+      top: 50%;
+      display: block;
+      padding-top: 45%;
+      padding-bottom: 45%;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
       text-transform: uppercase;
-      color: #01605e; }
-    .page-template-template-trip-list-php .mission-trip-page .details a.apply {
-      margin-top: 10px;
-      margin-bottom: 20px; }
-  .page-template-template-trip-list-php .mission-trip-page .sub-details a.apply.bottom {
-    margin-top: 20px; }
-  .page-template-template-trip-list-php .mission-trip-page .the-content {
-    margin-bottom: 15px; }
-    .page-template-template-trip-list-php .mission-trip-page .the-content a.trip-more {
-      color: #00B3b0;
-      font-weight: 600; }
-    .page-template-template-trip-list-php .mission-trip-page .the-content small {
-      color: #01605e; }
+      opacity: 1;
+      font-size: 18px; }
+      @media only screen and (max-width: 991px) {
+        .page-template-template-trip-list-php .trip-tile span.tile-title {
+          font-size: 0.8em; } }
+      @media only screen and (min-width: 1200px) {
+        .page-template-template-trip-list-php .trip-tile span.tile-title {
+          font-size: 20px; } }
+  .page-template-template-trip-list-php .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .page-template-template-trip-list-php .mission-trip-page {
+    padding: 30px 15px; }
+    .page-template-template-trip-list-php .mission-trip-page:nth-of-type(even) {
+      background: #f8f8f8;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+    .page-template-template-trip-list-php .mission-trip-page:hover {
+      background: #ffefcf; }
+    .page-template-template-trip-list-php .mission-trip-page .details {
+      border-left: 3px solid #00B3b0; }
+      .page-template-template-trip-list-php .mission-trip-page .details h2 {
+        font-size: 24px; }
+      .page-template-template-trip-list-php .mission-trip-page .details p.schedule {
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        text-transform: uppercase;
+        color: #01605e; }
+      .page-template-template-trip-list-php .mission-trip-page .details a.apply {
+        margin-top: 10px;
+        margin-bottom: 20px; }
+    .page-template-template-trip-list-php .mission-trip-page .sub-details a.apply.bottom {
+      margin-top: 20px; }
+    .page-template-template-trip-list-php .mission-trip-page .the-content {
+      margin-bottom: 15px; }
+      .page-template-template-trip-list-php .mission-trip-page .the-content a.trip-more {
+        color: #00B3b0;
+        font-weight: 600; }
+      .page-template-template-trip-list-php .mission-trip-page .the-content small {
+        color: #01605e; }
 
 .advanced-trips-cta {
   padding: 30px 0; }

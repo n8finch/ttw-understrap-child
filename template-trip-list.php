@@ -14,25 +14,25 @@
 	<div class="container">
 		<ul>
 	<?php $value_title = get_post_meta($post->ID, '_cmb_trip_value_props', true); ?>
-	
+
 	<?php
 	$i = 0;
 	foreach($value_title as $value_title )
 	{
 		echo '<li><button type="button" class="btn btn-sm" data-toggle="modal" data-target="#'.$i.'">'.$value_title['title'].'</button></li>';
-		
+
 		$i++;
 	}
-	
+
 ?>
 		</ul>
 <?php $value_content = get_post_meta($post->ID, '_cmb_trip_value_props', true); ?>
-	
+
 	<?php
 	$x = 0;
 	foreach($value_content as $value_content )
 	{
-		
+
 		echo '<div class="modal fade" id="'.$x.'" tabindex="-1" role="dialog" aria-labelledby="'.$value_content['title'].'Label" aria-hidden="true">';
 		echo '<div class="modal-dialog">';
 		echo '<div class="modal-content">';
@@ -48,11 +48,11 @@
 		echo '</div>';
 		echo '</div>';
 		echo '</div>';
-		
+
 		$x++;
 	}
-	
-?>														
+
+?>
 	</div>
 </div>
 <div id="wrapper">
@@ -64,8 +64,8 @@
 				</div>
 			</div>
             <div class="row">
-						
-					<?php trips_pages(); ?>	
+
+					<?php trips_pages(); ?>
             </div><!--/ row -->
             <div class="advanced-trips-cta row aqua">
 	            <div class="col-md-8">
