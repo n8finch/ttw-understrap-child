@@ -53,6 +53,31 @@ $social-hover:			$aqua-light;
 	background-color:$gold;
 }
 
+.primary {
+	background-color: $color-primary;
+}
+
+.secondary {
+	background-color: $color-secondary;
+}
+.accent {
+	background-color: $color-accent;
+}
+
+.aqua {
+	background-color: $aqua;
+}
+
+.navy {
+	background-color: $navy;
+}
+.coral {
+	background-color: $coral;
+}
+.gold {
+	background-color:$gold;
+}
+
 // Fonts
 
 @font-face {font-family: 'Font Awesome';src: url('../fonts/fontawesome-webfont.ttf') format('truetype');}
@@ -383,6 +408,8 @@ $social-hover:			$aqua-light;
 	.sub-nav {
 		@include drop-shadow;
 
+		min-height: 40px;
+
 		ul {
 			li {
 				float: left;
@@ -392,6 +419,11 @@ $social-hover:			$aqua-light;
 					text-transform: uppercase;
 					color: $white;
 					background: transparent;
+
+					border-radius: 0;
+    				transition: .4s all;
+
+
 					&:hover {
 						color: $white;
 						background: darken($gold,10%);
@@ -403,6 +435,10 @@ $social-hover:			$aqua-light;
 
 	#wrapper {
 		padding: 0px;
+
+		.row.aqua {
+			width: 100%;
+		}
 	}
 
 	// Trip Menu with Post Tiles

@@ -10277,6 +10277,27 @@ footer .affiliations .widget {
     height: 100%;
     width: auto; }
 
+.primary {
+  background-color: #00B3b0; }
+
+.secondary {
+  background-color: #ef4e24; }
+
+.accent {
+  background-color: #ffb12c; }
+
+.aqua {
+  background-color: #00B3b0; }
+
+.navy {
+  background-color: #004356; }
+
+.coral {
+  background-color: #ef4e24; }
+
+.gold {
+  background-color: #ffb12c; }
+
 @font-face {
   font-family: 'Font Awesome';
   src: url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
@@ -10472,7 +10493,8 @@ footer .affiliations .widget {
 .page-template-template-trip-list-php .sub-nav {
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2); }
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  min-height: 40px; }
   .page-template-template-trip-list-php .sub-nav ul li {
     float: left;
     padding: 5px 10px;
@@ -10480,13 +10502,17 @@ footer .affiliations .widget {
     .page-template-template-trip-list-php .sub-nav ul li button {
       text-transform: uppercase;
       color: #fff;
-      background: transparent; }
+      background: transparent;
+      border-radius: 0;
+      transition: .4s all; }
       .page-template-template-trip-list-php .sub-nav ul li button:hover {
         color: #fff;
         background: #f89c00; }
 
 .page-template-template-trip-list-php #wrapper {
   padding: 0px; }
+  .page-template-template-trip-list-php #wrapper .row.aqua {
+    width: 100%; }
 
 .page-template-template-trip-list-php .trip-tile {
   background-repeat: no-repeat;
