@@ -64,7 +64,6 @@
 				</div>
 			</div>
             <div class="row">
-
 					<?php trips_pages(); ?>
             </div><!--/ row -->
             <div class="advanced-trips-cta row aqua">

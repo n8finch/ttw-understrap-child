@@ -9716,22 +9716,6 @@ Media Queries
     margin-bottom: 15px;
     float: left !important; } }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  .page-template-template-trip-list .row.aqua .container .col-sm-12 .trip-tile-menu .trip-tile {
-    width: 20%;
-    float: left; }
-  .page-template-template-trip-list .mission-trip-page .details {
-    border: 0px;
-    width: 50%;
-    float: left; }
-  .single-trips .charts .chart {
-    width: 33%;
-    float: left;
-    padding: 10px; }
-  .single-trips .trip-options #WHATthediv .trip-tiles {
-    width: 50%;
-    float: left; } }
-
 @media (min-width: 480px) and (max-width: 979px) {
   .home-whats-new .posts {
     border-left: 0px;
@@ -10054,6 +10038,7 @@ button.navbar-toggle {
     .carousel .carousel-inner .item .carousel-caption h3 {
       color: #fff;
       font-weight: 300;
+      font-family: museo-slab,serif;
       font-size: 50px;
       padding-bottom: 15px; }
     .carousel .carousel-inner .item .carousel-caption p a {
@@ -10523,7 +10508,6 @@ footer .affiliations .widget {
   .page-template-template-trip-list-php #wrapper {
     padding: 0px; }
     .page-template-template-trip-list-php #wrapper .row.aqua {
-      margin-top: 40px;
       width: 100%; }
       @media (max-width: 767px) and (min-width: 480px) {
         .page-template-template-trip-list-php #wrapper .row.aqua {
@@ -10532,7 +10516,11 @@ footer .affiliations .widget {
           top: -40px; } }
   .page-template-template-trip-list-php .trip-tile {
     background-repeat: no-repeat;
-    background-color: #01605e; }
+    background-color: #01605e;
+    min-width: 210px; }
+    @media (max-width: 480px) {
+      .page-template-template-trip-list-php .trip-tile {
+        min-width: 50vw; } }
     .page-template-template-trip-list-php .trip-tile .background {
       height: 100%;
       width: 100%;
@@ -10566,16 +10554,34 @@ footer .affiliations .widget {
   .page-template-template-trip-list-php .row {
     margin-left: 0px;
     margin-right: 0px; }
+  .page-template-template-trip-list-php #mission-trip-pages {
+    width: 100%; }
   .page-template-template-trip-list-php .mission-trip-page {
     padding: 30px 15px; }
+    .page-template-template-trip-list-php .mission-trip-page h2 {
+      color: #01605e;
+      font-size: 44px;
+      font-weight: 300;
+      font-family: 'museo-slab',serif; }
     .page-template-template-trip-list-php .mission-trip-page:nth-of-type(even) {
       background: #f8f8f8;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #eee; }
     .page-template-template-trip-list-php .mission-trip-page:hover {
       background: #ffefcf; }
+    .page-template-template-trip-list-php .mission-trip-page > .container {
+      display: flex;
+      flex-wrap: wrap; }
+    .page-template-template-trip-list-php .mission-trip-page .col-xs-12.visible-xs.the-content h2 {
+      padding-left: 15px; }
     .page-template-template-trip-list-php .mission-trip-page .details {
       border-left: 3px solid #00B3b0; }
+      @media (max-width: 480px) {
+        .page-template-template-trip-list-php .mission-trip-page .details {
+          border: 0px;
+          float: left;
+          padding: 0 30px;
+          width: 50%; } }
       .page-template-template-trip-list-php .mission-trip-page .details h2 {
         font-size: 24px; }
       .page-template-template-trip-list-php .mission-trip-page .details p.schedule {
@@ -10587,6 +10593,10 @@ footer .affiliations .widget {
       .page-template-template-trip-list-php .mission-trip-page .details a.apply {
         margin-top: 10px;
         margin-bottom: 20px; }
+    @media (max-width: 480px) {
+      .page-template-template-trip-list-php .mission-trip-page .sub-details {
+        padding: 0 15px;
+        width: 100%; } }
     .page-template-template-trip-list-php .mission-trip-page .sub-details a.apply.bottom {
       margin-top: 20px; }
     .page-template-template-trip-list-php .mission-trip-page .the-content {
@@ -10596,6 +10606,23 @@ footer .affiliations .widget {
         font-weight: 600; }
       .page-template-template-trip-list-php .mission-trip-page .the-content small {
         color: #01605e; }
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .page-template-template-trip-list .row.aqua .container .col-sm-12 .trip-tile-menu .trip-tile {
+    width: 20%;
+    float: left; }
+  .page-template-template-trip-list .mission-trip-page .details {
+    border: 0px;
+    float: left;
+    padding: 0 30px;
+    width: 50%; }
+  .single-trips .charts .chart {
+    width: 33%;
+    float: left;
+    padding: 10px; }
+  .single-trips .trip-options #WHATthediv .trip-tiles {
+    width: 50%;
+    float: left; } }
 
 .advanced-trips-cta {
   padding: 30px 0; }

@@ -456,7 +456,7 @@ $social-hover:			$aqua-light;
 				top: -40px;
 			}
 
-			margin-top: 40px;
+			// margin-top: 40px;
 			width: 100%;
 		}
 	}
@@ -464,8 +464,14 @@ $social-hover:			$aqua-light;
 	// Trip Menu with Post Tiles
 
 	.trip-tile {
+
+		@media (max-width: 480px) {
+			min-width: 50vw;
+		}
 		background-repeat: no-repeat;
 		background-color: $aqua-dark;
+		min-width: 210px;
+
 		.background {
 			height: 100%;
 			width: 100%;
@@ -506,8 +512,19 @@ $social-hover:			$aqua-light;
 
 	.row {margin-left: 0px;margin-right: 0px;}
 
+	#mission-trip-pages {
+		width: 100%;
+	}
+
 	.mission-trip-page {
 		padding: 30px 15px;
+
+		h2 {
+			color: $aqua-dark;
+			font-size: 44px;
+			font-weight: 300;
+			font-family: 'museo-slab',serif;
+		}
 
 		&:nth-of-type(even) {
 			background: $white-off;
@@ -518,7 +535,24 @@ $social-hover:			$aqua-light;
 			background:lighten($gold-light,25%);
 		}
 
+		& > .container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.col-xs-12.visible-xs.the-content h2 {
+			padding-left: 15px;
+		}
+
 		.details {
+
+			@media (max-width: 480px) {
+				border: 0px;
+				float: left;
+				padding: 0 30px;
+				width: 50%;
+			}
+
 			border-left: 3px solid $aqua;
 
 			h2 {
@@ -544,6 +578,12 @@ $social-hover:			$aqua-light;
 			}
 		}
 		.sub-details {
+
+			@media (max-width: 480px) {
+				padding: 0 15px;
+				width: 100%;
+			}
+
 			a {
 				&.apply{
 					&.bottom {
@@ -564,8 +604,54 @@ $social-hover:			$aqua-light;
 				color: $aqua-dark;
 			}
 		}
-	}
+	} //end mission-trip-page
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+.page-template-template-trip-list {
+		.row.aqua {
+			.container {
+				.col-sm-12 {
+					.trip-tile-menu {
+						.trip-tile {
+							width: 20%;
+							float: left;
+						}
+					}
+				}
+			}
+		}
+		.mission-trip-page {
+			.details {
+				border: 0px;
+				float: left;
+				padding: 0 30px;
+				width: 50%;
+			}
+		}
+	}
+
+	.single-trips {
+		.charts {
+			.chart {
+				width: 33%;
+				float: left;
+				padding: 10px;
+			}
+		}
+		.trip-options {
+			#WHATthediv {
+				.trip-tiles {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+	}
+
+}
+
+
 .advanced-trips-cta {
 	padding: 30px 0;
 	p {

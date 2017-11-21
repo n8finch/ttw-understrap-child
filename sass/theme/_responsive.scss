@@ -378,48 +378,7 @@ Media Queries
 }
 
 
-@media (min-width: 480px) and (max-width: 767px) {
-.page-template-template-trip-list {
-		.row.aqua {
-			.container {
-				.col-sm-12 {
-					.trip-tile-menu {
-						.trip-tile {
-							width: 20%;
-							float: left;
-						}
-					}
-				}
-			}
-		}
-		.mission-trip-page {
-			.details {
-				border: 0px;
-				width: 50%;
-				float: left;
-			}
-		}
-	}
 
-	.single-trips {
-		.charts {
-			.chart {
-				width: 33%;
-				float: left;
-				padding: 10px;
-			}
-		}
-		.trip-options {
-			#WHATthediv {
-				.trip-tiles {
-					width: 50%;
-					float: left;
-				}
-			}
-		}
-	}
-
-}
 @media (min-width: 480px) and (max-width: 979px) {
 
 .home-whats-new {
