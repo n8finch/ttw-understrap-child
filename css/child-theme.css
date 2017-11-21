@@ -9830,13 +9830,13 @@ Media Queries
     opacity: 1.0;
     transition: 0.7s all; }
 
-@media (max-width: 480px) {
+@media (max-width: 979px) {
   .sticky-menu.affix .menu-below-header, .sticky-menu.affix-top .menu-below-header {
     margin-top: 0;
     padding: 0;
     width: 100%; } }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .sticky-menu.affix .menu-below-header ul#menu-main, .sticky-menu.affix-top .menu-below-header ul#menu-main {
     flex-direction: column;
     padding: 0;
@@ -9851,6 +9851,12 @@ header {
     padding-bottom: 15px; }
   header #head-wrapper {
     padding: 0px; }
+    @media (max-width: 767px) and (min-width: 480px) {
+      header #head-wrapper {
+        margin: 0;
+        max-width: 100%;
+        position: relative;
+        width: 100%; } }
 
 .navbar .navbar-nav.nav-pills > li > a {
   padding: 12px 8px; }
@@ -10002,10 +10008,13 @@ nav.menu-above-header {
     padding-right: 0; } }
 
 button.navbar-toggle {
-  float: left; }
-  @media (max-width: 480px) {
+  float: left;
+  background-color: transparent;
+  border-width: 0; }
+  @media (max-width: 767px) {
     button.navbar-toggle {
       position: absolute;
+      right: 15px;
       top: 15px; } }
   button.navbar-toggle span {
     color: #054355; }

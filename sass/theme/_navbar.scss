@@ -55,14 +55,14 @@ header.jumbotron {
 
 .sticky-menu.affix .menu-below-header, .sticky-menu.affix-top .menu-below-header {
 
-	@media (max-width: 480px) {
+	@media (max-width: 979px) {
 		margin-top: 0;
 		padding: 0;
 		width: 100%;
 	}
 
 	ul#menu-main {
-		@media (max-width: 480px) {
+		@media (max-width: 767px) {
 			flex-direction: column;
 			padding: 0;
 			width: 100%;
@@ -81,6 +81,14 @@ header {
 	}
 
 	#head-wrapper {
+
+		@media (max-width: 767px) and (min-width: 480px) {
+			margin: 0;
+			max-width: 100%;
+			position: relative;
+			width: 100%;
+		}
+
 		padding: 0px;
 	}
 
@@ -315,9 +323,12 @@ nav.menu-above-header {
 
 button.navbar-toggle {
     float: left;
+	background-color: transparent;
+	border-width: 0;
 
-	@media (max-width: 480px) {
+	@media (max-width: 767px) {
 		position: absolute;
+		right: 15px;
 		top: 15px;
 	}
 
