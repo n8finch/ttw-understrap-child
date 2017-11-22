@@ -10909,6 +10909,17 @@ html#ecwid_html body#ecwid_body .ecwid div.ecwid-form {
     .single-events .sponsor .list-group .list-group-item:hover {
       background: #f2f2f2; }
 
+body.post-template-default header.entry-header.affix,
+body.post-template-default header.entry-header.affix-top,
+body.page-template-default header.entry-header.affix,
+body.page-template-default header.entry-header.affix-top {
+  box-shadow: 0 0 0;
+  margin-bottom: 15px; }
+
+body.post-template-default h1.entry-title,
+body.page-template-default h1.entry-title {
+  font-family: 'museo-slab', serif; }
+
 /*------------------------------------------- */
 .panel-group.faq .panel {
   margin-bottom: 10px;
