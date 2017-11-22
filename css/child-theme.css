@@ -10628,6 +10628,31 @@ button.navbar-toggle {
 .page-template-template-venture-project-php #wrapper .venture-testimonies + .row.clearfix img {
   border-radius: 100%; }
 
+body.page-template-template-global-initiatives-php h1.entry-title {
+  font-family: 'museo-slab', serif; }
+
+body.page-template-template-global-initiatives-php .gi-float-left {
+  float: left; }
+
+body.page-template-template-global-initiatives-php .gi-float-right {
+  float: right; }
+
+body.page-template-template-global-initiatives-php .details.section.gi-float-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
+  body.page-template-template-global-initiatives-php .details.section.gi-float-left > p {
+    width: 100%; }
+  @media (min-width: 768px) {
+    body.page-template-template-global-initiatives-php .details.section.gi-float-left > div.col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%; } }
+  @media (max-width: 768px) {
+    body.page-template-template-global-initiatives-php .details.section.gi-float-left > div.col-md-3 {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+
 @font-face {
   font-family: 'Font Awesome';
   src: url("../fonts/fontawesome-webfont.ttf") format("truetype"); }

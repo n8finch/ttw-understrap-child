@@ -1399,13 +1399,13 @@ function global_initiatives_pages() {
      $excerpts .=  custom_taxonomies_terms_links();
      $excerpts .= '</span>';
      $excerpts .= '</div>';
-		$excerpts .= '<div class="col-md-8 col-sm-6 section">';
+		$excerpts .= '<div class="col-md-8 col-sm-6 section gi-float-left">';
 			$excerpts .= get_the_content_with_formatting();
 		$excerpts .= '</div>';
-		$excerpts .= '<div class="col-md-4 col-sm-6 section">';
+		$excerpts .= '<div class="col-md-4 col-sm-6 section gi-float-right">';
 			$excerpts .= get_the_post_thumbnail();
 		$excerpts .= '</div>';
-		$excerpts .= '<div class="col-xs-12 details section ">';
+		$excerpts .= '<div class="col-xs-12 details section gi-float-left">';
 			$excerpts .= '<p class="details-title">Project Details</p>';
 
 			$excerpts .= '<div class="col-md-3 col-sm-6 col-xs-12 section">';
