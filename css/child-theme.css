@@ -10653,6 +10653,15 @@ body.page-template-template-global-initiatives-php .details.section.gi-float-lef
       flex: 0 0 50%;
       max-width: 50%; } }
 
+html#ecwid_html body#ecwid_body .ecwid .ecwid-btn--primary {
+  background: #428bca !important; }
+
+html#ecwid_html body#ecwid_body .ecwid .ecwid-btn--primary:hover {
+  background: #3276b1 !important; }
+
+html#ecwid_html body#ecwid_body .ecwid div.ecwid-form {
+  background-color: #f1f5f6; }
+
 @font-face {
   font-family: 'Font Awesome';
   src: url("../fonts/fontawesome-webfont.ttf") format("truetype"); }
