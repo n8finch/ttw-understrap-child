@@ -13,6 +13,7 @@
 // Any additional imported files //
 @import "theme/child_theme";  // <--------- Add your styles into this file
 
+@import "theme/bootstrap-progressbar-3.3.0";
 
 // Partials
 @import "theme/wrappers";
@@ -21,6 +22,7 @@
 @import "theme/trips";
 @import "theme/internships";
 @import "theme/global-initiatives";
+@import "theme/single-trips";
 @import "theme/shopping-cart";
 @import "theme/events";
 @import "http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";

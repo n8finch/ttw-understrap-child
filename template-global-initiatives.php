@@ -35,14 +35,14 @@
                                 <div id="content-<?php the_ID(); ?>" class="entry-content clearfix">
                                     <div class="content">
                                         <?php the_content(); ?>
-                                        
+
                                     </div><!-- /.entry-content -->
                                     <?php global_initiatives_pages(); ?>  
                                 </div><!-- /.entry-content -->
                             </article> <!-- /#post -->
                         <?php } // end while ?>
                     <?php } // end if ?>
-                    
+
                 </section><!-- /#main -->
 
             </div><!--/ row -->

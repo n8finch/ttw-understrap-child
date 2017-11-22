@@ -59,7 +59,7 @@
 		                                        <li class="home-breadcrumb">
 		                                            <a href="<?php echo get_site_url(); ?>/mission-trip" itemprop="url"><span itemprop="title"><< All Trips</span></a>
 		                                        </li>
-		                                        <li class="active"><?php echo get_the_title($ID); ?></li>
+		                                        <li class="active"><?php echo " / " . get_the_title($ID); ?></li>
 		                                    </ul>
 		                                </div>
 
@@ -396,7 +396,7 @@
                                         </div><!-- /charts -->
                                        <div class="trip-details" style="display: <?php $trip_details_display = get_post_meta( get_the_ID(), '_cmb_trip_details_display', true); echo $trip_details_display;?>;">
                                         <h4>Trip Details</h4>
-                                        <div class="panel-group faq" id="accordion">
+                                        <div class="panel-group faq" id="accordion" role="tablist">
 
 	                                        <?php $question = get_post_meta($post->ID, '_cmb_trip_faq_group', true); ?>
 												<?php
@@ -406,8 +406,8 @@
 												{
 
 													if ($i == 0) {
-												        echo '<div class="panel panel-default">';
-													    echo '<div class="panel-heading first">';
+												        echo '<div class="panel panel-default card">';
+													    echo '<div class="panel-heading first card-header" id="question'. $question['number'] .'">';
 													    	echo '<h4 class="panel-title">';
 													        echo '<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#bcd-'. $question['number'].'">';
 													        echo '' .$question['question'] . '';
@@ -415,7 +415,7 @@
 
 															echo '</h4>';
 													    echo '</div>';
-														echo '<div id="bcd-'. $question['number'].'" class="panel-collapse collapse in">';
+														echo '<div id="bcd-'. $question['number'].'" class="panel-collapse collapse show in">';
 															echo '<div class="panel-body">';
 													        echo '' .$question['description'] . '';
 															echo '</div>';

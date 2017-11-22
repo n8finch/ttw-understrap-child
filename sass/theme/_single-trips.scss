@@ -1,0 +1,53 @@
+body.trips-template-default.single.single-trips {
+
+	ul.breadcrumb {
+		display: flex;
+		padding: 4px 17px;
+		background: #f9f9f9;
+
+		li.active {
+			margin-left: 5px;
+		}
+	}
+
+	h1.pull-left, h3, h4 {
+		color: $aqua-dark;
+		font-family: 'museo-slab', serif;
+	}
+
+	div.widget.the-scoop {
+		ul {
+			list-style: none;
+			padding-left: 20px;
+		}
+	}
+
+	.charts.clearfix > div {
+	    float: left;
+	}
+
+	.panel-heading {
+		background-color: #00b3b0;
+    	padding: 10px 15px;
+
+		h4 {
+			line-height: 1;
+			margin-bottom: 0;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+
+	.panel-group.faq .panel:nth-child(even) .panel-heading {
+	    background: #00b3b0;
+	}
+
+	.panel-body {
+		background-color: #eeeeee;
+		border: 1px solid #00b3b0;
+		padding: 15px;
+	}
+
+}
