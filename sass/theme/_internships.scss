@@ -18,6 +18,15 @@
 		margin: auto;
 	}
 
+	.entry-content .content {
+		text-align: left;
+
+		a {
+			text-decoration: none;
+			font-family: 'museo-slab', sans-serif;
+		}
+	}
+
 	.venture-testimonies + .row.clearfix {
 
 		img {

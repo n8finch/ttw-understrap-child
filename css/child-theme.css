@@ -10619,6 +10619,12 @@ button.navbar-toggle {
 .page-template-template-venture-project-php #wrapper .wp-video {
   margin: auto; }
 
+.page-template-template-venture-project-php #wrapper .entry-content .content {
+  text-align: left; }
+  .page-template-template-venture-project-php #wrapper .entry-content .content a {
+    text-decoration: none;
+    font-family: 'museo-slab', sans-serif; }
+
 .page-template-template-venture-project-php #wrapper .venture-testimonies + .row.clearfix img {
   border-radius: 100%; }
 
