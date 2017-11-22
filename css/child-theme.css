@@ -10824,6 +10824,24 @@ body.trips-template-default.single.single-trips .panel-body {
   border: 1px solid #00b3b0;
   padding: 15px; }
 
+body.page-template-template-the-scoop-php h1, body.page-template-template-the-scoop-php h3, body.page-template-template-the-scoop-php h4 {
+  font-family: 'museo-slab', serif;
+  font-size: 28px;
+  margin-top: 10px; }
+
+body.page-template-template-the-scoop-php .content h3, body.page-template-template-the-scoop-php .content h4 {
+  color: #01605e; }
+
+body.page-template-template-the-scoop-php h1.post-title {
+  font-size: 50px; }
+
+body.page-template-template-the-scoop-php #health-safety > h3 {
+  font-size: 36px;
+  margin-top: 20px; }
+
+body.page-template-template-the-scoop-php ul#tab-menu li a {
+  text-decoration: none; }
+
 html#ecwid_html body#ecwid_body .ecwid .ecwid-btn--primary {
   background: #428bca !important; }
 
