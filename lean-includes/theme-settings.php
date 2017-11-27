@@ -75,7 +75,10 @@ function theme_menu() {
     );
 
 } // end theme_menu
-add_action( 'admin_menu', 'theme_menu' );
+
+//* Re-enable the legacy theme settings by uncommenting the action below
+
+// add_action( 'admin_menu', 'theme_menu' );
 
 /* ----------------------------- *
  * Layout Options
