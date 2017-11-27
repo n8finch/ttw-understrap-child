@@ -10253,10 +10253,30 @@ button.navbar-toggle {
     transition: 1s;
     border-top: 1px solid #e93e11;
     margin-top: 15px; }
+    @media (min-width: 576px) {
+      .orange-intro-bar .hidden-panels .collapse .col-sm-3 {
+        float: left; } }
+    @media (min-width: 576px) {
+      .orange-intro-bar .hidden-panels .collapse .col-sm-9 {
+        float: right; } }
+  @media (min-width: 576px) {
+    .orange-intro-bar .hidden-panels .collapsing .col-sm-3 {
+      float: left; } }
+  @media (min-width: 576px) {
+    .orange-intro-bar .hidden-panels .collapsing .col-sm-9 {
+      float: right; } }
   .orange-intro-bar .hidden-panels p {
     color: #fff;
     font-size: 18px;
     font-family: "proxima-nova",Helvetica,sans-serif; }
+  .orange-intro-bar .hidden-panels .close {
+    float: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #b9310d;
+    text-shadow: none;
+    opacity: .5; }
 
 .bcd-aqua-intro-bar {
   background-color: #00B3b0; }

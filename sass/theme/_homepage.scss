@@ -118,16 +118,54 @@
 		margin-top: 0px;
 	}
 	.hidden-panels {
+
 		.collapse {
 			padding: 20px 40px;
 			transition: 1s;
 			border-top: 1px solid darken($coral,5%);
 			margin-top: 15px;
+
+			.col-sm-3 {
+				@media (min-width: 576px) {
+					float: left;
+				}
+			}
+
+			.col-sm-9 {
+				@media (min-width: 576px) {
+					float: right;
+				}
+			}
 		}
+
+		.collapsing {
+			.col-sm-3 {
+				@media (min-width: 576px) {
+					float: left;
+				}
+			}
+
+			.col-sm-9 {
+				@media (min-width: 576px) {
+					float: right;
+				}
+			}
+		}
+
 		p {
 			color: $white;
 			font-size: 18px;
 			@include proxima;
+		}
+
+		.close {
+		    float: none;
+		    font-size: 16px;
+		    font-weight: 400;
+		    line-height: 1;
+		    color: darken( #d1370f, 5% );
+		    text-shadow: none;
+		    opacity: .5;
 		}
 	}
 
