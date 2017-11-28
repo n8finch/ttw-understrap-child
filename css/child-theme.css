@@ -10852,6 +10852,9 @@ body.page-template-template-the-scoop-php h1, body.page-template-template-the-sc
 body.page-template-template-the-scoop-php .content h3, body.page-template-template-the-scoop-php .content h4 {
   color: #01605e; }
 
+body.page-template-template-the-scoop-php .nav-link {
+  padding: 0; }
+
 body.page-template-template-the-scoop-php h1.post-title {
   font-size: 50px; }
 

@@ -975,7 +975,7 @@ $args = array(
  while ( $query->have_posts() ) :
      $query->the_post();
      if($i == 1) {
-	        $excerpts .= '<li role="presentation" class="active"><a href="#';
+	        $excerpts .= '<li role="presentation" class="nav-item"><a class="nav-link" href="#';
 	        $excerpts .= get_the_slug();
 	        $excerpts .= '" aria-controls="';
 	        $excerpts .= get_the_slug();
@@ -983,7 +983,7 @@ $args = array(
 	        $excerpts .= get_the_title();
 	        $excerpts .= '</a></li>';
      } else {
-     	$excerpts .= '<li role="presentation" class=""><a href="#';
+     	$excerpts .= '<li role="presentation" class="nav-item"><a class="nav-link" href="#';
 	        $excerpts .= get_the_slug();
 	        $excerpts .= '" aria-controls="';
 	        $excerpts .= get_the_slug();
