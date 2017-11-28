@@ -13,7 +13,7 @@
         <div id="image-slider">
             <div class="container">
                 <div class="row">
-                    <div id="carousel" class="carousel slide col-sm-12">
+                    <div id="image-slider" class="carousel slide col-sm-12">
 	                    <?php $indicator = get_post_meta($post->ID, '_cmb_trip_slider_group', true); ?>
                         <ol class="carousel-indicators">
 	                        <?php
@@ -41,11 +41,11 @@
 							{
 
 								if ($w == 0) {
-							        echo '<div class="item active">';
+							        echo '<div class="carousel-item item active">';
 								    	echo ' <img src="'. $slide['picture'].'">';
 								    echo '</div>';
 							    } else {
-							        echo '<div class="item">';
+							        echo '<div class="carousel-item item">';
 								    	echo ' <img src="'. $slide['picture'].'">';
 								    echo '</div>';
 							    }
