@@ -18,10 +18,12 @@
 
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="stylesheet" href="https://use.typekit.net/hfi0zom.css">
+	
     <title><?php wp_title( '' ); ?></title>
     <?php global $post; ?>
     <?php wp_head(); ?>
-    <script src="//use.typekit.net/swn5oma.js"></script>
+    <!-- <script src="//use.typekit.net/swn5oma.js"></script> -->
 	<script>try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript">
 	            jQuery(document).ready(function() {

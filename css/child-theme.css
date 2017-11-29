@@ -9924,6 +9924,11 @@ Media Queries
   position: absolute;
   bottom: 0; }
 
+body {
+  font-family: proxima-nova,Helvetica,sans-serif;
+  font-weight: 400;
+  color: #004356; }
+
 @media (min-width: 768px) {
   .container {
     width: 750px; } }
